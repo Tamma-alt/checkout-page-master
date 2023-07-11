@@ -6,75 +6,80 @@
       name="viewport"
       content="width=device-width, initial-scale=1,
   maximum-scale=5" />
+  <script src="https://kit.fontawesome.com/20c2948fe6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
     
   <body>
     <main>
       <div class="container">
-        <h2>Checkout</h2>
-        <div class="card">
-          <div>
-            <img src="photo1.png" alt="a back pack">
-            <div>
-              <h4>vintage backbag</h4>
-              <p>$54.99 <span>$94.99</span></p>
+        <h2 class="header">Checkout</h2>
+        <div class="desktop">
+          <div class="card flex">
+            <div class="product">
+              <img src="photo1.png" alt="a back pack" class="product-img">
               <div>
-                <p>-</p>
-                <p>1</p>
-                <p>+</p>
+                <h4>Vintage Backbag</h4>
+                <p class="price"><span class="orange">$54.99</span> <span class="line">$94.99</span></p>
+                <div class="quantity">
+                  <i class="fa-solid fa-minus"></i>
+                  <p>1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
               </div>
+            </div>
+            <div class="product">
+              <img src="photo2.png" alt="a back pack" class="product-img">
+              <div>
+                <h4>Levi Shoes</h4>
+                <p class="price"> <span class="orange">$74.99</span> $124.99</p>
+                <div class="quantity">
+                  <i class="fa-solid fa-minus"></i>
+                  <p>1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sub">
+              <p class="shipping-fee">shipping <span>$19</span></p>
+              <p class="total">total <span>$148.98</span> </p>
             </div>
           </div>
 
-          <div>
-            <img src="photo2.png" alt="a back pack">
-            <div>
-              <h4>levi shoes</h4>
-              <p>$74.99 <span>$124.99</span></p>
-              <div>
-                <p>-</p>
-                <p>1</p>
-                <p>+</p>
-              </div>
+          
+          <div class="form">
+              <form action="">
+                <h4 class="contact-info">contact information</h4>
+                <label for="email">Email
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+              </label>
+                <label for="phone">Phone
+                <input type="tel" name="phone number" id="phone" placeholder="Enter your phone">
+              </label>
+                <h4 class="shipping-address">shipping address</h4>
+                <label for="name">full name
+                <input type="text" name="full name" id="full-name" placeholder="Rodney Cotton">
+              </label>
+                <label for="address">Address
+                <input type="text" name="address" id="address" placeholder="Your address">
+              </label>
+                <label for="city">city
+                <input type="text" name="city" id="city" placeholder="Your city">
+              </label>
+                <div class="form-flex">
+                  <label for="country">country
+                    <input type="text" name="country" id="country" placeholder="Your country">
+                  </label>
+                  <label for="postal code">postal code
+                  <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code">
+                </label>
+                </div>
+                <label for="save"> <input type="checkbox" name="save" id="save">
+                  save this information for next time</label>
+          
+                <input type="button" value="Continue">
+              </form>
             </div>
-          </div>
-
-          <p>shipping <span>$19</span></p>
-          <p>total <span>148.98</span> </p>
         </div>
-
-
-        <div class="form">
-            <form action="">
-              <h4>contact information</h4>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email">
-
-              <label for="phone">Phone</label>
-              <input type="tel" name="phone number" id="phone" placeholder="Enter your phone">
-            
-              <h4>shipping address</h4>
-              <label for="name">full name</label>
-              <input type="text" name="full name" id="full-name" placeholder="Rodney Cotton">
-
-              <label for="address">Address</label>
-              <input type="text" name="address" id="address" placeholder="Your address">
-
-              <label for="city">city</label>
-              <input type="text" name="city" id="city" placeholder="Your city">
-
-              <label for="country">country</label>
-              <input type="text" name="country" id="country" placeholder="Your country">
-
-              <label for="postal code">postal code</label>
-              <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code">
-
-              <input type="checkbox" name="save" id="save">
-              <label for="save">save this information for next time</label>
-            
-              <input type="button" value="Continue">
-            </form>
-          </div>
       </div>
     </main>
   </body>
